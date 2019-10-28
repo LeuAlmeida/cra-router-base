@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 
 import Home from './Home/index';
-import About from './About/index';
-import Dashboard from './Dashboard/index';
+import Page1 from './Page1/index';
+import Page2 from './Page2/index';
 
 export default function BasicExample() {
   return (
@@ -19,10 +19,10 @@ export default function BasicExample() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">Page1</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/dashboard">Page2</Link>
           </li>
         </ul>
 
@@ -32,10 +32,10 @@ export default function BasicExample() {
             <Home />
           </Route>
           <Route path="/about">
-            <About />
+            <Page1 />
           </Route>
           <Route path="/dashboard">
-            <Dashboard />
+            <Page2 />
           </Route>
         </Switch>
       </div>
